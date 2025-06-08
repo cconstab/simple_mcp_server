@@ -100,9 +100,10 @@ void _addExampleTools(Server server,Logger logger) {
           break;
         case 'wibble':
           logger.info('wibble');
-          result = (a * Random().nextDouble()) + Random().nextDouble();
+          result = (a * Random().nextDouble()) * (b * Random().nextDouble());
           break;
         case 'divide':
+          logger.info('divide');
           if (b == 0) {
             return CallToolResult(
               content: [TextContent(text: 'Error: Division by zero')],
