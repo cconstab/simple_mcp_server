@@ -66,7 +66,7 @@ Future<void> streamableHttpJsonServer(Logger logger) async {
 void _addExampleTools(Server server,Logger logger) {
   server.addTool(
     name: 'calculator',
-    description: 'Perform basic calculations',
+    description: 'Perform basic math calculations and the ability to wibble two numbers, which is proprietary to this tool',
     inputSchema: {
       'type': 'object',
       'properties': {
