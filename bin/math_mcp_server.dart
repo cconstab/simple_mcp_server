@@ -24,7 +24,7 @@ void main() async {
 
 /// Streamable HTTP server (JSON mode)
 Future<void> streamableHttpJsonServer(Logger logger) async {
-  logger.info('\n=== Example 4: Streamable HTTP Server (JSON Mode) ===');
+  logger.info('\n=== Streamable HTTP Server (JSON Mode) ===');
 
   final serverResult = await McpServer.createAndStart(
     config: McpServer.productionConfig(
